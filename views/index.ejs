@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    
+    <title>KMetrics</title>
+</head>
+
+<body>
+        <div class="container" style="padding-bottom: 10px;"> 
+            <div class="row">
+                    
+                    <div class="col-sm-3 col-md-offset-2 formulario">
+                        <select class="form-control" name="id_busqueda" id="opciones">
+                        </select>
+                    </div>
+
+                    <div class="col-sm-2 formulario"><input id="inicio" name="inicio" type="datetime" required class="form-control" title="Fecha inicio"></div>
+
+                    <div class="col-sm-2 formulario"><input id='termino' name="termino" type="datetime" required class="form-control" title="Fecha Fin"></div>
+
+            </div>
+            <div class="row" id="advertencias"></div>
+        </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                                        <!-- Nav tabs -->
+                <div class="card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" ><a href="#generalData" id="generalTab" aria-controls="general" role="tab" data-toggle="tab">General</a></li>
+                        <li role="presentation"><a href="#usuarioActivoData" id="usuarioActivoTab" aria-controls="usuario_activo" role="tab" data-toggle="tab">Usuario más activo</a></li>
+                        <li role="presentation"><a href="#hashtags" id="hashtagsTab" aria-controls="hashtags" role="tab" data-toggle="tab">Top 10 de Hashtags</a></li>
+                        <li role="presentation"><a href="#tvsrtData" id="tvsrtTab" aria-controls="Tweets originales vs RTs" role="tab" data-toggle="tab">Tweets originales vs RTs</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane" id="generalData">
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="usuarioActivoData"></div>
+                        <div role="tabpanel" class="tab-pane" id="hashtags">
+                            <div class="row" id="hashtagsData">
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="tvsrtData">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="public/js/io.js"></script>
+
+</body>
+
+</html>

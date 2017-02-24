@@ -1,0 +1,27 @@
+{
+  "name": "karmapulse",
+  "version": "1.0.0",
+  "description": "Prueba técnica del proceso de seleción de KarmaPulse",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexsalcedogonzalez/karmapulse.git"
+  },
+  "author": "Pablo Alejandro Salcedo Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexsalcedogonzalez/karmapulse/issues"
+  },
+  "homepage": "https://github.com/alexsalcedogonzalez/karmapulse#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "moment": "^2.17.1",
+    "mongoose": "^4.8.4",
+    "socket.io": "^1.7.3"
+  }
+}
